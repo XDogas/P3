@@ -1,0 +1,66 @@
+package aula1;
+
+import java.util.*;
+import java.util.LinkedList;
+import static java.lang.System.*;
+
+public class Ex2 {
+	
+	private static Scanner in = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+		int op;
+		
+		do {
+			out.println("1: Adicionar pessoa á lista");
+			out.println("2: Retirar pessoa da lista");
+			out.println("3: Apresentar lista de pessoas");
+			out.println("4: Ordenar lista por nome");
+			out.println("5: Ordenar lista por cc");
+			out.println("6: Sair do programa");
+			out.println("op: ");
+			op = Integer.parseInt(in.nextLine());
+			
+			switch(op ) {
+				case 1:
+					addP();
+					break;
+				case 2:
+					
+					break;
+				case 3:
+					
+					break;
+				case 4:
+					
+					break;
+				case 5:
+					
+					break;
+				case 6:
+					out.print("Terminar programa");
+					exit(0);
+					break;
+			}
+			
+		} while(op != 6);
+		
+		private static void addP() {
+			out.println("Selecionou a opção 1");
+			
+			out.print("Nome: ");
+			String nome = in.nextLine();
+			
+			out.print("CC: ");
+			int cc = Integer.parseInt(in.nextLine());
+			
+			out.print("Data de Nascimento (dd/mm/aaaa): ");
+			String data = in.nextLine();
+		}
+		
+	}
+
+	
+
+}

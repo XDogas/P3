@@ -1,0 +1,17 @@
+package aula1;
+
+public class Circulo {
+	
+	private double raio;
+	private Ponto centro;
+	
+	public Circulo(double x, double y, double r) {
+		centro = new Ponto(x,y);
+	}
+	
+	public Circulo(Ponto centro, double r) {
+		raio = r;
+		this.centro = centro;
+	}
+
+}

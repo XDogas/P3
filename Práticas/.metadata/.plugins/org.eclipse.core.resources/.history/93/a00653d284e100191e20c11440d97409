@@ -1,0 +1,8 @@
+package aula1;
+
+public class Circulo {
+	
+	private double raio;
+	private Ponto centro;
+
+}

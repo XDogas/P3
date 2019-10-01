@@ -1,0 +1,53 @@
+package aula1;
+
+import java.util.Scanner;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		String str = in.nextLine();
+		
+		int contD = 0;			//contador dos digitos
+		int contW = 1;			//contador das palavras
+		int contL = 0;			//contador das letras
+		int contMin = 0;		//contador das minusculas
+		int contMai = 0;		//contador das maiusculas
+		
+		boolean allMin=false;
+		boolean allMai=false;
+		for(int i=0;i<str.length();i++) {
+			char c = str.charAt(i);
+			
+			if(Character.isDigit(c)) contD++;					//se for digito incrementa 1 ao contador dos digitos 
+			
+			if(Character.isLetter(c)) {							//se for letra
+				contL++;										//incrementa 1 ao contador das letras
+				if(Character.toLowerCase(c)==c) contMin++;		//verifica se é minuscula
+				if(Character.toUpperCase(c)==c) contMai++;		//verifica se é maiuscula
+			}
+			if(contMin==contL) allMin=true;
+			else allMin=false;
+			if(contMai==contL) allMai=true;
+			else allMai=false;
+			
+			if(c==' ') contW++;
+			
+			String[] strs = str.split(" ");
+			for(int j=0;j<strs.length;j++) {
+				
+			}
+			
+		}
+		//System.out.printf("a) %i//b) %s//c) %s//d) %i//e) %s", cont, allMin, allMai,);
+		System.out.println("a) " + contD);
+		System.out.println("b) " + allMin);
+		System.out.println("c) " + allMai);
+		System.out.println("d) " + contW);
+		
+		System.out.println(strs.length);
+	}
+
+}

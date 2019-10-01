@@ -1,0 +1,40 @@
+package aula1;
+
+public class Data {
+	
+	private int dia;
+	private int mes;
+	private int ano;
+	private static int[] diasMesComum = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	
+	public Data(int dia, int mes, int ano) {
+		assert dataValida(dia, mes, ano): "Data inválida";
+		
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+	}
+	
+	public static boolean bissexto(int ano) {
+		return ano%4 == 0 && ano%100 != 0 || ano%400 == 0;
+	}
+	
+	public static boolean mesValido(int mes) {
+		return 1 <= mes && mes <= 12;
+	}
+	
+	public static int diasDoMes(int mes, int ano) {
+		assert mesValido(mes) : "Mês inválido";
+		
+		int result = diasMesComum[mes-1];
+	    if (mes == 2 && bissexto(ano)) result++;
+	    
+	    return result;
+	}
+	
+	public static boolean dataValida(int dia, int mes, int ano) {
+		return mesValido(mes) && (dia >= 1 && dia <= diasDoMes(mes, ano));
+	}
+	
+	
+}

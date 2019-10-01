@@ -1,0 +1,24 @@
+package aula1;
+
+public class Data {
+	
+	private int dia;
+	private int mes;
+	private int ano;
+	private static int[] diasMesComum = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	
+	public Data(int dia, int mes, int ano) {
+		assert dataValida(dia, mes, ano): "Data inválida";
+		
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+	}
+
+	private boolean dataValida(int dia, int mes, int ano) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+}
