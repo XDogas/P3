@@ -1,7 +1,0 @@
-package aula1;
-
-public class Pessoa {
-	String nome;
-	int cc;
-	Data dataNasc;		
-}
