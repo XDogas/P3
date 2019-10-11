@@ -1,5 +1,7 @@
 package aula03.Ex4;
 
+import java.time.LocalDateTime;
+
 public class Data {
 	
 	private int dia;
@@ -8,6 +10,7 @@ public class Data {
 	private static int[] diasMesComum = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	
 	public Data(int dia, int mes, int ano) {
+//		assert dataValida(dia, mes, ano): "Data inválida";
 		assert dia > 0 && dia < diasDoMes(mes, ano) : "Dia inválido";
 		assert mes > 0 && mes <= 12 : "Mês inválido";
 		assert ano >  0 : "Ano inválido";
@@ -22,6 +25,7 @@ public class Data {
 		int mes = Integer.valueOf(data.split("/")[1]);
 		int ano = Integer.valueOf(data.split("/")[2]);
 		
+//		assert valida();
 		assert dia > 0 && dia < diasDoMes(mes, ano) : "Dia inválido";
 		assert mes > 0 && mes <= 12 : "Mês inválido";
 		assert ano >  0 : "Ano inválido";
@@ -51,6 +55,19 @@ public class Data {
 	    
 	    return result;
 	}
+	
+	public static Data hoje() {
+		LocalDateTime localDate = LocalDateTime.now();
+		return new Data(localDate.getDayOfMonth(), localDate.getMonthValue(), localDate.getYear());
+	}
+	
+//	public static boolean dataValida(int dia, int mes, int ano) {
+//		return mesValido(mes) && (dia >= 1 && dia <= diasDoMes(mes, ano));
+//	}
+
+//	public boolean valida() {
+//		return dataValida(dia, mes, ano);
+//	}
 	
 	@Override
 	public String toString() {

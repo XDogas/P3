@@ -25,6 +25,7 @@ public class Ex3 {
 		out.println("c1 equals to c2? -> " + c1.equals(c2)); // False
 		out.println("c1 equals to c3? -> " + c1.equals(c3)); // False
 		out.println("c1 equals to c7? -> " + c1.equals(c7)); // False
+//		out.println("c1 equals to c5? -> " + c1.equals(c5)); // True		// wrong
 		out.println("c2 equals to c3? -> " + c2.equals(c3)); // False
 		out.println("c2 equals to c5? -> " + c2.equals(c5)); // False
 		out.println("c2 equals to c6? -> " + c2.equals(c6)); // True

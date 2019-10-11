@@ -6,7 +6,7 @@ public class Ex2 {
 		
 		Circulo c1 = new Circulo (2);
 //		Circulo c2 = new Circulo (1,3,2);
-		Circulo c3 = new Circulo (c1);
+		Circulo c3 = new Circulo (c1);		// wrong : centro = null
 		
 		System.out.println(c1 + "tem area: " + c1.area() + " e perimetro: " + c1.perimetro());
 		System.out.println(c3 + "tem area: " + c3.area() + " e perimetro: " + c3.perimetro());

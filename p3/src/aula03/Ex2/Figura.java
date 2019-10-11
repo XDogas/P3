@@ -5,6 +5,7 @@ public class Figura {
 	private Ponto centro;
 	
 	public Figura(Ponto centro) {
+//		assert centro != null : "Centro inválido";
 		this.centro = centro;
 	}
 	

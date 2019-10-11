@@ -9,6 +9,8 @@ public class Veiculo {
 	private double pesoBruto;
 	
 	public Veiculo(int cilindrada, int potencia, int lotacao, char tipoCartaPrecisa, double pesoBruto) {
+//		assert this.tipoCartaPrecisa == 'A' || this.tipoCartaPrecisa == 'B' || this.tipoCartaPrecisa == 'C' || this.tipoCartaPrecisa == 'D' : "Tipo de carta inválido";
+//		assert this.cilindrada > 0 && this.potencia > 0 && this.lotacao > 0 && this.pesoBruto > 0 : "Dados do veículo inválidos";
 		this.cilindrada = cilindrada;
 		this.potencia = potencia;
 		this.lotacao = lotacao;

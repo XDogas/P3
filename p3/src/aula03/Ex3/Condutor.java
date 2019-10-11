@@ -6,6 +6,7 @@ public class Condutor extends Pessoa {
 
 	public Condutor(String nome, int cc, Data dataNasc, char tipoCarta) {
 		super(nome, cc, dataNasc);
+//		assert tipoCartaValido() : "Tipo de carta inválido";
 		this.tipoCarta = tipoCarta;
 	}
 	
@@ -23,6 +24,10 @@ public class Condutor extends Pessoa {
 	public String toString() {
 		return super.toString() + ", Tipo de carta: " + getTipoCarta();
 	}
+	
+//	private boolean tipoCartaValido() {
+//		return this.tipoCarta == 'A' || this.tipoCarta == 'B' || this.tipoCarta == 'C' || this.tipoCarta == 'D';
+//	}
 	
 //	public boolean equals(Object c) {
 //		if (c == null) return false;
