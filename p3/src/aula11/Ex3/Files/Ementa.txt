@@ -1,0 +1,11 @@
+Ementa:
+Prato 'Prato N.2' composto por 2 Ingredientes, dia Segunda
+Vegetariano Prato 'Prato N.7 (Vegetariano)' composto por 2 Ingredientes, dia Segunda
+Vegetariano Prato 'Prato N.8 (Vegetariano)' composto por 2 Ingredientes, dia Segunda
+Dieta (90.8 Calorias) Prato 'Prato N.1 (Dieta)' composto por 2 Ingredientes, dia Terça
+Vegetariano Prato 'Prato N.4 (Vegetariano)' composto por 2 Ingredientes, dia Terça
+Vegetariano Prato 'Prato N.6 (Vegetariano)' composto por 2 Ingredientes, dia Terça
+Vegetariano Prato 'Prato N.9 (Vegetariano)' composto por 2 Ingredientes, dia Terça
+Dieta (90.8 Calorias) Prato 'Prato N.0 (Dieta)' composto por 2 Ingredientes, dia Quarta
+Vegetariano Prato 'Prato N.3 (Vegetariano)' composto por 2 Ingredientes, dia Quarta
+Dieta (90.8 Calorias) Prato 'Prato N.5 (Dieta)' composto por 2 Ingredientes, dia Quinta
