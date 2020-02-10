@@ -1,0 +1,9 @@
+
+public class Debito extends Movimento {
+
+	public Debito(double montante, String data) {
+		super(montante, data);
+		assert montante < 0;
+	}
+
+}

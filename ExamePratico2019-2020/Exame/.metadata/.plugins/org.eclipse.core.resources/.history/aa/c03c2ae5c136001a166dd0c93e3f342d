@@ -1,0 +1,28 @@
+import java.util.Set;
+
+public class Banco {
+	
+	private String nome;
+	private Set<Conta> contas;
+	
+	public Banco(String nome) {
+		assert nome.length() > 0 : "Nome do Banco inválido";
+		this.nome = nome;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public Set<Conta> getContas() {
+		return contas;
+	}
+
+	public boolean add(Conta c) {
+		contas.add(c);
+		if(contas.contains(c)) return true;
+		else return false;
+	}
+	
+
+}

@@ -1,0 +1,9 @@
+
+public class Conta {
+	
+	private int nSeq;
+	private Ciente cliente;
+	private double saldo;
+	private List<Movimento>
+
+}

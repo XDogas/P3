@@ -1,0 +1,8 @@
+
+public class eConta extends Conta {
+
+	public eConta(Cliente cliente) {
+		super(cliente);
+	}
+
+}

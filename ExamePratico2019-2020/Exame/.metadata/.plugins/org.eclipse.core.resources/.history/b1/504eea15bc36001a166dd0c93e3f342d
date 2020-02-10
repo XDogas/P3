@@ -1,0 +1,14 @@
+
+public class Empresa extends Cliente {
+	
+	private Cliente gerente;
+
+	public Empresa(String nome, String nCont, TipoCliente tipo, Cliente gerente) {
+		super(nome, nCont, tipo);
+		assert gerente != null;
+		this.gerente = gerente;
+		
+		
+	}
+
+}

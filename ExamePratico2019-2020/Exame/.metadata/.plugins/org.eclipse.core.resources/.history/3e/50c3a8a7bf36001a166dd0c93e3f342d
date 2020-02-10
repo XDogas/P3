@@ -1,0 +1,9 @@
+
+public class eConta extends Conta implements Eletronica {
+
+	public eConta(Cliente cliente) {
+		super(cliente);
+		cliente.setTipo(TipoCliente.Online);
+	}
+
+}

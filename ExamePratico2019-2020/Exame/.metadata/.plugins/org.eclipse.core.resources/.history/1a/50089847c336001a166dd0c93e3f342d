@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Set;
+
+public class Banco {
+	
+	private String nome;
+	private ArrayList<Conta> contas;
+	
+	public Banco(String nome) {
+		assert nome.length() > 0 : "Nome do Banco inválido";
+		this.nome = nome;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public ArrayList<Conta> getContas() {
+		return contas;
+	}
+
+	public boolean add(Conta c) {	
+		if(contas.contains(c)) return false;
+		else return contas.add(c);
+		
+	}
+
+//	public boolean add(Conta c) {
+//		return contas.add(c);
+//	}
+	
+
+}

@@ -1,0 +1,13 @@
+import java.util.Set;
+
+public class Banco {
+	
+	private String nome;
+	private Set<Conta> contas;
+	
+	public Banco(String nome) {
+		assert nome.length() > 0 : "Nome do Banco inválido";
+		this.nome = nome;
+	}
+
+}

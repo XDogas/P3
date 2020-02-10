@@ -1,0 +1,59 @@
+import java.util.Iterator;
+import java.util.Set;
+
+public class Banco {
+	
+	private String nome;
+	private Set<Conta> contas;
+	
+	public Banco(String nome) {
+		assert nome.length() > 0 : "Nome do Banco inválido";
+		this.nome = nome;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public Set<Conta> getContas() {
+		return contas;
+	}
+	
+	public int totalContas() {
+		return contas.size();
+	}
+
+	public boolean add(Conta c) {	
+		return contas.add(c);
+		
+	}
+
+	public MyIterator iterator() {
+		return new MyIterator();
+	}
+	
+	public class MyIterator implements Iterator<T>() {
+		
+		private int i;
+		
+		public MyIterator() {
+			this.i = 0;
+		}
+		
+		@Override
+		public boolean hasNext() {
+			// TODO Auto-generated method stub
+			return false;
+		}
+
+		@Override
+		public T next() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+	}
+
+	
+
+}
